@@ -31,13 +31,16 @@ int main()
         cin >> a >> b;
         graph[a].push_back(b);
     }
-    for (int x = 1; x <= n; x++)
-    {
-        if (visited[x] == false)
-        {
-            topSort(x);
-        }
-    }
+    // for (int x = 1; x <= n; x++)
+    // {
+    //     if (visited[x] == false)
+    //     {
+    //         topSort(x);
+    //     }
+    // }
+    ll d;
+    cin >> d;
+    topSort(d);
     cout << "Topologically Sorted order is : \n";
     while (toporder.empty() == false)
     {
